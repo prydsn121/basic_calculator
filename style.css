@@ -1,0 +1,189 @@
+body
+{
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    
+    /* background-color: rgb(65, 64, 64); */
+    /* background-image: url("./3d-render-wallpaper-dark-math-symbol-focused-red-pi_361738-11.webp"); */
+    
+}
+.container{
+    /* position:overlap; */
+    margin-left:1.8rem;
+    padding:20px;
+    /* min-width: 300px; */
+    /* min-height: 400px; */
+
+    border-radius: 8px;
+    box-shadow:13px 13px 20px #1e2022 ,
+          -13px -13px 20px  #404242 ;
+          background-color:rgb(14, 13, 13);
+        
+}
+.title
+{
+    text-align: center;
+    font-size:30px;
+    /* text-decoration-color: #66d9ff;
+     */
+     color:rgb(226, 214, 214);
+     font-weight: 500;
+     text-shadow: rgb(255, 255, 255);
+     font-family:monospace;
+
+}
+
+.content{
+    width:100%;
+    margin-top:1.7rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+}
+.display #screen
+{
+    width:97%;
+    margin-bottom: .5em;
+    height:70px;
+    font-size:35px;
+    outline:none;
+    border:none;
+    text-align:right;
+    /* padding-right: 0.5em; */
+    /* background-color:  rgb(44, 43, 43);
+     */
+     background-color:rgb(33, 30, 30);
+    border-radius:6px;
+    box-shadow: inset 8px 8px 8px  rgb(21, 21, 21) ,
+                inset -8px -8px 8px #393636;
+                color:white;
+               
+}
+.btns{
+    width:100%;
+    margin-top:1.7rem;
+    display:flex; 
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    background-color: black;
+     /* background-color:rgb(49, 47, 47);  */
+    
+    
+}
+.btns .row button{
+    width:80px;
+    height:30px;
+    font-size:16px;
+    border:none;
+    outline:none;
+    margin:5px;
+    border-radius:4px;
+    box-shadow:5px 5px 8px #1e2022   ,
+               -5px -5px 8px #808283;
+               transition: .1s;
+               background-color:black;
+               color:white;
+
+   
+
+}
+.btns .row button:hover{
+    box-shadow:inset 5px 5px 8px rgba(16,16,16,.1);
+                /* inset -5px -5px 8px #fff; */
+                background:white;
+                color:black;
+
+
+}
+#eval
+{
+    background:#33ccff;
+    color:#fff;
+    box-shadow:inset 5px 5px 8px #66d9ff,
+                inset -5px -5px 8px #00ace6;
+}
+#eval:hover{
+    box-shadow :inset 5px 5px 8px #00ace6,
+                 inset -5px -5px 8px #00ace6;
+}
+#ac
+{
+    background:#33cc33;
+    color:#fff;
+  
+}
+#ac:hover{
+    box-shadow :inset 5px 5px 8px #2eb82e,
+                 inset -5px -5px 8px #33cc33;
+}
+#ce
+{
+    background:#ff3399;
+    color:#fff;
+}
+#ce:hover{
+    box-shadow :inset 5px 5px 8px #e60073,
+                 inset -5px -5px 8px #ff3399;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  #background-video
+  {
+ position:absolute;
+ right:0;
+ bottom:0;
+ min-width:100%;
+ min-height: 100%;
+ width:auto;
+ height:auto;
+ z-index:-100;
+
+
+  }
+  @media only screen and (max-width:400px){
+    /* color:white; */
+    body{
+        background-color: #00ace6;
+    }
+    
+    }
+
+ 
